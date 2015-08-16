@@ -249,8 +249,18 @@ body{
 }
 
 .cannot-draw{
-  opacity: 0.5;
   pointer-events: none !important;
+}
+
+
+.can-play li{
+
+  pointer-events: auto !important;
+}
+
+.cann-draw{
+  opacity: 0.5;
+  pointer-events: auto !important;
 }
 
 .messages{
@@ -258,4 +268,16 @@ body{
   font-size: 18px;
   font-family: 'Raleway-Regular';
   margin-top: 3em;
+}
+
+.ftr{
+position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    z-index: 1;
+    text-align:right;
 }
