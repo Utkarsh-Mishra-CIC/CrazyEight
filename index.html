@@ -1,0 +1,68 @@
+<!doctype html>
+<html ng-app="crazyEight">
+  <head>
+    <title>Crazy Eight</title>
+    <link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <header class="ce-header">
+      <div class="logo">
+        <a href="#">
+          <img src="/img/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="ce-primary-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="ce-sidebar">
+        <ul class="ce-players-list" id="ce-players-list">
+
+        </ul>
+      </div>
+      <div class="ce-display-container">
+        <div class="box" id="box">
+
+        </div>
+        <div class="box3 no-display" id="box3">
+          <div class="row1 opponent-cards" id="opponentCards">
+            <ul>
+
+            </ul>
+          </div>
+          <div class="row2">
+	    <a href="#" class="pass" id="passTurn">Pass</a>
+            <a href="#" class="draw-cards" id="drawACard">Draw Card</a>
+            <div class="show-table" id="showTable">
+              <div class="showCard" id="showCard">
+                <span class="card-rank"></span>
+                <span class="card-suit"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row3 my-cards" id="myCards">
+            <ul>
+
+            </ul>
+          </div>
+        </div>
+        <div class="messages" id="messages">
+
+        </div>
+      </div>
+    </main>
+<footer>
+  <p>Created by: Anmol Goel,Utkarsh Mishra</p>
+  <p>Contact information: <a href="mailto:anmolgoyal74@gmail.com">
+  anmolgoyal74@gmail.com</a>, <a href="mailto:ashishwhynot@gmail.com">
+  ashishwhynot@gmail.com</a>.</p>
+</footer>
+  </body>
+  <script src="/socket.io/socket.io.js" charset="utf-8"></script>
+  <script src="/js/lib/jquery.js" charset="utf-8"></script>
+  <script src="/js/main.js" charset="utf-8"></script>
+</html>

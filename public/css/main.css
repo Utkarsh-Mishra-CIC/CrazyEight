@@ -1,0 +1,261 @@
+
+@font-face {
+  src: url('/fonts/Raleway-Regular.ttf');
+  font-family: 'Raleway-Regular';
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+body{
+  margin: 0;
+  padding-top: 80px;
+}
+
+.no-display{
+  display: none;
+}
+
+.yes-display{
+  display: block;
+}
+
+.ce-header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  z-index: 1;
+}
+
+.logo{
+  float:left;
+  max-width: 200px;
+  margin: 28px 10%;
+}
+
+.logo a{
+  display: block;
+}
+
+.logo a img{
+  max-width: 100%;
+  height: 24px;
+}
+
+.ce-primary-nav{
+  float: right;
+  margin-right: 10%;
+}
+
+.ce-primary-nav li{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.ce-primary-nav li a{
+  display: block;
+  font-size: 24px;
+  color: white;
+  font-family: sans-serif;
+  line-height: 80px;
+  font-family: 'Raleway-Regular';
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+}
+
+.ce-primary-nav li a:hover{
+  color: #999;
+}
+
+.ce-sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #999;
+  width: 20%;
+  height: 100%;
+  padding-top: 80px;
+  overflow-y: auto;
+  transition: transform 0.3s;
+}
+
+.start-game .ce-sidebar{
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.ce-players-list{
+  text-align: center;
+}
+
+.ce-players-list li{
+  margin: 20px 0;
+}
+
+.ce-players-list li a{
+  display: block;
+  font-family: 'Raleway-Regular';
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+}
+
+.ce-players-list li a:hover{
+  color: #eee;
+}
+
+.ce-display-container{
+  height: 800px;
+  width: 80%;
+  float: right;
+  background-color: #ddd;
+  transition: width 0.3s;
+}
+
+.start-game .ce-display-container{
+  width: 100%;
+}
+
+.row2{
+  padding: 2em 0;
+}
+
+.opponent-cards{
+  margin: 24px 0px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.opponent-cards li{
+  display: inline-block;
+  margin: 5px 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-family: 'Raleway-Regular';
+  box-shadow: -3px 2px 4px 0px rgba(0,0,0,0.3);
+}
+
+
+.draw-cards{
+  text-align: center;
+  padding: 10px 15px;
+  color: black;
+  display: inline-block;
+  background-color: white;
+  font-family: 'Raleway-Regular';
+}
+
+.row2{
+  text-align: center;
+}
+
+.row2 div{
+  display: inline-block;
+}
+
+.my-cards{
+  margin: 24px 0px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-cards li{
+  display: inline-block;
+  margin: 5px 5px;
+  vertical-align: top;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-family: 'Raleway-Regular';
+  box-shadow: -3px 2px 4px 0px rgba(0,0,0,0.3);
+}
+
+.my-cards li .card-rank{
+  display: block;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+.my-cards li .card-suit{
+  display: block;
+  font-size: 24px;
+}
+
+.showCard{
+  display: inline-block;
+  margin: 5px 5px;
+  vertical-align: top;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-family: 'Raleway-Regular';
+  box-shadow: -3px 2px 4px 0px rgba(0,0,0,0.3);
+}
+
+.showCard .card-rank{
+  display: block;
+  font-size: 24px;
+  margin-top: 12px;
+}
+
+.showCard .card-suit{
+  display: block;
+  font-size: 24px;
+}
+
+.card-black{
+  color: black !important;
+}
+
+.card-red{
+  color: red !important;
+}
+
+.cannot-play li{
+  opacity: 0.5;
+  pointer-events: none !important;
+}
+
+.cannot-draw{
+  opacity: 0.5;
+  pointer-events: none !important;
+}
+
+.messages{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Raleway-Regular';
+  margin-top: 3em;
+}
