@@ -8,13 +8,7 @@ function Player(id){
 }
 
 Player.prototype.startPlaying = function(packs,opponentId, game){
-  /*for (var i = 0; i < 8; i++) {
-    this.cards.push(card.drawRandomCard(packs[opponentId]));
-  }
-  */
   this.opponentId = opponentId;
-  //packs[opponentId]=[];
-  //packs[opponentId]=packs[this.id];
   this.isPlaying = true;
 }
 
