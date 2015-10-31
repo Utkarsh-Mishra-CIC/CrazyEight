@@ -1,5 +1,4 @@
 var express = require('express');
-//Express 3.x is a light-weight web application framework to help organize your web application into an MVC architecture on the server side. You can use a variety of choices for your templating language
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
